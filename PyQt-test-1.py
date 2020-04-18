@@ -30,4 +30,9 @@ class Ui_Dialog(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.pushButton.setText(_translate("Dialog", "PushButton"))
+		
+if __name__=="__main__":
+    app = QApplication(sys.argv)
+    ex = Ui_Dialog()
+    app.exec_()
 
